@@ -6,13 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B59F232A2F784B4000F44724 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = B59F23292F784B4000F44724 /* FirebaseMessaging */; };
+		B59F232C2F784B4B00F44724 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B59F232B2F784B4B00F44724 /* FirebaseAuth */; };
+		B59F232E2F784B6400F44724 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B59F232D2F784B6400F44724 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B5418AD92F7839BD00696CC9 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B59F23272F7849FF00F44724 /* Exceptions for "ChatApp" folder in "ChatApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B5418AD82F7839BD00696CC9 /* ChatApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B5418ADB2F7839BD00696CC9 /* ChatApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B59F23272F7849FF00F44724 /* Exceptions for "ChatApp" folder in "ChatApp" target */,
+			);
 			path = ChatApp;
 			sourceTree = "<group>";
 		};
@@ -23,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59F232A2F784B4000F44724 /* FirebaseMessaging in Frameworks */,
+				B59F232C2F784B4B00F44724 /* FirebaseAuth in Frameworks */,
+				B59F232E2F784B6400F44724 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				B5418ADB2F7839BD00696CC9 /* ChatApp */,
+				B5418AEA2F7846B600696CC9 /* Frameworks */,
 				B5418ADA2F7839BD00696CC9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +66,13 @@
 				B5418AD92F7839BD00696CC9 /* ChatApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B5418AEA2F7846B600696CC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +95,9 @@
 			);
 			name = ChatApp;
 			packageProductDependencies = (
+				B59F23292F784B4000F44724 /* FirebaseMessaging */,
+				B59F232B2F784B4B00F44724 /* FirebaseAuth */,
+				B59F232D2F784B6400F44724 /* FirebaseFirestore */,
 			);
 			productName = ChatApp;
 			productReference = B5418AD92F7839BD00696CC9 /* ChatApp.app */;
@@ -94,6 +127,9 @@
 			);
 			mainGroup = B5418AD02F7839BD00696CC9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B59F23282F784B2100F44724 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B5418ADA2F7839BD00696CC9 /* Products */;
 			projectDirPath = "";
@@ -253,11 +289,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,11 +322,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +368,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B59F23282F784B2100F44724 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B59F23292F784B4000F44724 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B59F23282F784B2100F44724 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		B59F232B2F784B4B00F44724 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B59F23282F784B2100F44724 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B59F232D2F784B6400F44724 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B59F23282F784B2100F44724 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B5418AD12F7839BD00696CC9 /* Project object */;
 }
